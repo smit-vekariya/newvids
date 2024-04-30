@@ -16,8 +16,9 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from apis.views import AddData
+from apis.views import AddCatData
 
 urlpatterns = [
-    path('add_data', AddData.as_view(), name="add_data"),
+    path('add_cat', AddCatData.as_view({'get':'add_cat'}), name="add_cat"),
+    path('add_data', AddCatData.as_view({'get':'add_data'}), name="add_data"),
 ]

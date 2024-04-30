@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-^=6-_k)oh!n9-fpcd1qd0rf(!8y2!!8cc*so1if(!*ydv@*_dc
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["*"]
 
 
 # Application definition
@@ -121,8 +121,8 @@ USE_I18N = True
 
 USE_TZ = True
 
-CSRF_TRUSTED_ORIGINS =['https://8100-monospace-newvids-1713848878294.cluster-7ubberrabzh4qqy2g4z7wgxuw2.cloudworkstations.dev']
-
+CSRF_TRUSTED_ORIGINS =['https://8000-monospace-newvids-1714469996852.cluster-fu5knmr55rd44vy7k7pxk74ams.cloudworkstations.dev']
+CORS_ORIGIN_WHITELIST = ['https://8000-monospace-newvids-1714469996852.cluster-fu5knmr55rd44vy7k7pxk74ams.cloudworkstations.dev']
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/5.0/howto/static-files/
 
